@@ -15,5 +15,25 @@
   <%= @pet.birthdate %>
 </p>
 
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th>Average weight </th>
+      <th>Average height </th>
+      <th>Maximum weight </th>
+      <th>maximum height </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= @pet.avg_weight %></td>
+      <td><%= @pet.avg_height %></td>
+      <td><%= @pet.max_weight %></td>
+      <td><%= @pet.max_height %></td>
+    </tr>
+  </tbody>
+</table>
+
 <%= link_to 'Edit', edit_pet_path(@pet) %> |
 <%= link_to 'Back', pets_path %>
